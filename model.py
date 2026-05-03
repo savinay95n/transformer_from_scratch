@@ -312,6 +312,16 @@ def build_transformer(src_vocab_size: int, tgt_vocab_size: int, src_seq_len: int
 
     return transformer
 
+def __main__():
+    # Sample usage of the transformer model
+    src_vocab_size = 10000
+    tgt_vocab_size = 10000
+    src_seq_len = 50
+    tgt_seq_len = 50
+    transformer = build_transformer(src_vocab_size, tgt_vocab_size, src_seq_len, tgt_seq_len)
+    print(transformer)  # Print the number of parameters in the model
 
+if __name__ == "__main__":
+    __main__()
 
         
