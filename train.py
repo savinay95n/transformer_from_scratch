@@ -9,7 +9,7 @@ from tokenizers.trainers import WordLevelTrainer
 from tokenizers.pre_tokenizers import Whitespace
 
 from dataset import BilingualDataset, causal_mask
-
+from model import build_transformer
 from pathlib import Path
 
 def get_all_sentences(ds, lang):
@@ -62,4 +62,5 @@ def get_ds(config):
     
     return train_dataloader, val_dataloader, tokenizer_src, tokenizer_tgt
     
-    
+
+def get_model(config, vocab_s)
